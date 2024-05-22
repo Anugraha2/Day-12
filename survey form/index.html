@@ -1,1 +1,170 @@
+<!-- Index.html  -->
+<!DOCTYPE html> 
+<html lang="en"> 
+  
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" 
+          content="width=device-width, 
+                   initial-scale=1.0"> 
+    <!-- Linking css file  -->
+    <link rel="stylesheet" href="style.css"> 
+    <title>Survey Form</title> 
+</head> 
+  
+<body> 
+  
+    <!-- Creating the form container  -->
+    <div class="container"> 
+         
+  
+        <!-- Contains error -->
+        <h4 id="errorText"></h4> 
+          
+        <!-- Form element  -->
+        <form id="surveyForm"> 
+  
+            <label for="name"> 
+              <b>  Name: </b><span class = "required">*</span>
+            </label><br>
+            <input type="text" 
+                   id="name" 
+                   name="name" 
+                   required>
+                   <input type="name" 
+                   id="name" 
+                   name="name" 
+                   required>
+                   <br>
+                   <small id="output">
+                    first&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              </small><small id="output">
+                last
+          </small>
+                   <br>
+                  <br>
 
+  
+            <label for="email"> 
+             <b>   E-mail: </b>
+                       </label><br> <input type="email" id="email" name="email"> <br>
+            
+  
+            <label> 
+              <b>  Your Experience: </b>
+            </label><br> 
+            
+  
+            <div class="card">
+                
+                <span onclick="gfg(1)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(2)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(3)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(4)"
+                      class="star">★
+                </span>
+                <span onclick="gfg(5)"
+                      class="star">★
+                </span> <br>
+                <small id="output">
+                      Overall, how would you rate your Experience with us?
+                </small>
+            </div>
+  
+            <br>
+
+            <p><b>How satisfied are you with us <span class = "required">*</span></b></p>
+            <table class="mark">
+                <tr>
+                    <th></th>
+                    <th>Very Unsatisfied</th>
+                    <th>Unatisfied</th>
+                    <th>Neutral</th>
+                    <th>Satisfied</th>
+                    <th>Very Satisfied</th>
+                </tr>
+                <tr bgcolor="#D3D3D3">
+                    <td class="work">Purchase</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td class="work">Service</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                </tr>
+                <tr bgcolor="#D3D3D3">
+                    <td class="work">company Overall</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                </tr>
+            </table>
+            <p><b>How Likely are you to<span class = "required">*</span></b></p>
+            <table class="mark">
+                <tr>
+                    <th></th>
+                    <th>Very Unlikely</th>
+                    <th>Unlikely</th>
+                    <th>Neutral</th>
+                    <th>Likely</th>
+                    <th>Very Likely</th>
+                </tr>
+                <tr bgcolor="#D3D3D3">
+                    <td class="work">Buy from us again</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                </tr>
+                <tr>
+                    <td class="work">Recommend our product to others</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                </tr>
+                <tr bgcolor="#D3D3D3">
+                    <td class="work">Recommend our company to others</td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                    <td><input type="radio"></td>
+                </tr>
+            </table>
+            <label for="feedback"> 
+               <b> Additional comments or suggestions:  </b>
+            </label><br> 
+            <input type="textarea" 
+                   id="feedback" 
+                   name="feedback"><br> 
+  
+  
+  
+            <button type="submit"> 
+                Submit 
+            </button> 
+        </form> 
+    </div> 
+  
+    <script src="script.js"></script> 
+</body> 
+  
+</html>
