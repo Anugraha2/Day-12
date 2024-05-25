@@ -1,0 +1,69 @@
+.boundary {
+    position: relative;
+    margin: auto;
+    width: 80%;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 20%;
+    border: 5px dotted yellow;
+    margin-top: 1%;
+    cursor: pointer;
+    filter: grayscale(70%);
+}
+img:hover{
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.banner {
+    height: 45%;
+    background-color: grey;
+    /* border: 2px solid skyblue; */
+}
+
+.name {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    padding: 1px;
+    text-align: center;
+    width: 25%;
+    height: 25%;
+    background-color: yellow;
+    color: black;
+    margin-bottom: 1%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.contact {
+    text-align: center;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+.details {
+    column-count: 2;
+    column-rule: 2px solid gainsboro;
+}
+
+.skills {
+    list-style-type: none;
+}
+
+progress {
+    position: absolute;
+    width: 20%;
+    left: 20%;
+}
+
+h4 {
+    position: relative;
+    left: 3%;
+}
